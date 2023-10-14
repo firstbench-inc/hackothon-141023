@@ -85,6 +85,20 @@ const NavBar = () => {
           </div>
         </div>
       </div>
+      {/*moel comp*/}
+      {openModel && (
+        <div className={Style.modeBox}>
+          <Model
+            openModel={setOpenModel}
+            title="Welcome to"
+            head="Chat app"
+            info="hahahaahaha"
+            smallInfo="Select your name"
+            images={images.hero}
+            functionName={createaccount}
+          />
+        </div>
+      )}
     </div>
   );
 };
