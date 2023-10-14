@@ -95,10 +95,11 @@ const NavBar = () => {
             info="hahahaahaha"
             smallInfo="Select your name"
             images={images.hero}
-            functionName={createaccount}
+            functionName={createaccount}  
           />
         </div>
-      )}
+      )} 
+      {error == "" ? "" : <Error error={error} /> } 
     </div>
   );
 };
