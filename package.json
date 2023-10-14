@@ -1,13 +1,24 @@
 {
-  "name": "hackothon-141023",
+  "name": "q",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:firstbench-inc/hackothon-141023.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/firstbench-inc/hackothon-141023.git"
+  },
   "author": "Yash Prasad <pes1202201465@pesu.pes.edu>",
   "license": "MIT",
   "dependencies": {
     "ganache": "^7.9.1",
     "truffle": "^5.11.5",
     "web3": "^4.1.2"
+  },
+  "description": "there is a cat that wants to browse the web, the cat soons wants to talk to all the people on this planet\r but soon the cats long awaited dream is met with the harsh reality of the world wide web, the cat soon realises\r who its real enemies are, the enemies of the protagonist this time are none other than metaburg and choogle-bloom\r the cat soon realises its hope lies in another house, namely the blockchain, a peaceful and hopeful land\r inhabited by the cryptobros who spend their lives in the gym or the world famouse basements of their lands\r this is the journey of the cat, the cat who always benched first, the first bench cat",
+  "bugs": {
+    "url": "https://github.com/firstbench-inc/hackothon-141023/issues"
+  },
+  "homepage": "https://github.com/firstbench-inc/hackothon-141023#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
