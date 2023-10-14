@@ -1,12 +1,12 @@
 const hre = require("hardhat");
 
 async function main() {
-  const ChatApp = await hre.ethers.getContractFactory("ChatApp");
-  const chatApp = await ChatApp.deploy();
+  const ChatApp = await hre.ethers.getContractFactory("smart");
+  const smart = await ChatApp.deploy();
 
-  await chatApp.deployed();
+  await smart.deployed();
 
-  console.log(` Contract Address: ${chatApp.address}`);
+  console.log(` Contract Address: ${smart.address}`);
 }
 
 main().catch((error) => {
