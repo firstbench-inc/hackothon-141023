@@ -11,6 +11,7 @@
   "dependencies": {
     "ganache": "^7.9.1",
     "hardhat": "^2.18.1",
+    "react": "^18.2.0",
     "truffle": "^5.11.5",
     "web3": "^4.1.2"
   },
