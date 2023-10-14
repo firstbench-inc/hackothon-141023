@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "ganache": "^7.9.1",
+    "hardhat": "^2.18.1",
     "truffle": "^5.11.5",
     "web3": "^4.1.2"
   },
