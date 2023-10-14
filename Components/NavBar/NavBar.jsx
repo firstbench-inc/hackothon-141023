@@ -38,11 +38,9 @@ const NavBar = () => {
 
   return (
     <div className={Style.NavBar}>
-      NavBar
       <div className={Style.NavBar_box}>
         <div className={Style.NavBar_box_left}>
-          <img src={images.logo} alt="logo" width={50} height={50} />{" "}
-          {/* Use 'img' instead of 'Image' */}
+          <img src={images.logo} alt="logo" width={50} height={50} />
         </div>
         <div className={Style.NavBar_box_right}>
           <div className={Style.NavBar_box_right_menu}>
@@ -54,10 +52,36 @@ const NavBar = () => {
                   active === i + 1 ? Style.active_btn : ""
                 }`}
               >
-                <Link className={Style.NavBar_box_right_menu_items_link} href={el.link}>
-                </Link>
+                <Link
+                  className={Style.NavBar_box_right_menu_items_link}
+                  href={el.link}
+                ></Link>
               </div>
             ))}
+          </div>
+
+          {/*connect wallet*/}
+          <div className={Style.NavBar_box_right_connect}>
+            {account == "" ? (
+              <button onClick={() => connectWallet()}>
+                {""}
+                <span>Connect Wallet</span>
+              </button>
+            ) : (
+              <button onClick={() => setOpenModel(true)}>
+                {""}
+                <Image
+                  src={userName ? images.accountName : images.create2}
+                  width={20}
+                  height={20}
+                />
+                {""}
+                <small>{userName || "Create account"}</small>
+              </button>
+            )}
+          </div>
+          <div className={Style.NavBar_box_right_open} onClick={setOpen(true)}>
+            <Image src={images.open} alt="opem" width={30} height={30} />
           </div>
         </div>
       </div>
