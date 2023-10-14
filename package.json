@@ -6,6 +6,7 @@
   "author": "Yash Prasad <pes1202201465@pesu.pes.edu>",
   "license": "MIT",
   "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
     "ganache": "^7.9.1",
     "hardhat": "^2.18.1",
     "truffle": "^5.11.5",
